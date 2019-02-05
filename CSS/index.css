@@ -134,6 +134,7 @@ html {
 }
 img {
   width: 200px;
+  display: none;
   margin: auto;
   margin-top: -80px;
   z-index: 1;

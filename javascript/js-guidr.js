@@ -4,7 +4,7 @@ const zero=document.querySelector(".zero");
 const two=document.querySelector(".two");
 const four=document.querySelector(".four");
 
-  $(document).ready(() => {
+$(document).ready(() => {
   $(zero).fadeIn(3000);
   $(two).fadeIn(2500);
   $(four).fadeIn(2700);
@@ -15,18 +15,9 @@ const four=document.querySelector(".four");
   $("h1").fadeIn(3000);
   $(".site-icons").fadeIn(1100);
   $(".fa-compass").fadeIn(1500);
-  });
+  $("img").fadeIn(4000);
+});
 
-const heading = document.querySelector("h1");
-const container=document.querySelector(".container");
-
-
-
-// TweenMax.to(heading, 2, { ease: Power4.easeOut, x: 600 });
-
-
-
-
-// TweenLite.to(".site-icons", 2, { ease: Power4.easeOut, x: 320 });
+const container = document.querySelector(".container");
 TweenMax.to(container, 2.5, { ease: Power3.easeOut, x: 600 });
 
