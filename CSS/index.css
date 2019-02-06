@@ -186,6 +186,29 @@ p {
     margin-bottom: 20px;
   }
 }
+.fade-text {
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  animation: transform 2s;
+}
+@keyframes transform {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 800px) {
+  a {
+    margin-top: 150px;
+  }
+}
 .container {
   width: 100%;
   margin-left: -600px;
@@ -229,7 +252,7 @@ section {
     height: 200px;
   }
   .one p {
-    display: none;
+    margin-left: -5000px;
   }
   .one h1 {
     margin: auto;
@@ -287,15 +310,6 @@ section {
 }
 .fa-compass:hover {
   font-size: 11rem;
-  animation: transform 2s;
-}
-@keyframes transform {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 .two {
   height: 1100px;
@@ -305,6 +319,11 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 30% 50%;
+  overflow: hidden;
+}
+video {
+  height: 100%;
+  margin-left: -550px;
 }
 @media (max-width: 800px) {
   .two {
@@ -319,6 +338,7 @@ section {
   width: 300px;
   align-items: center;
   justify-content: center;
+  padding-top: 70px;
   padding-left: 2.5px;
 }
 .three .sign-up {
@@ -352,6 +372,7 @@ section {
     display: block;
     text-align: center;
     margin: 30px auto;
+    padding-top: 0;
   }
 }
 .four {

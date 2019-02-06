@@ -100,6 +100,7 @@ font-family: 'Pathway Gothic One', sans-serif;
 font-size: 28rem;
 color: @GreenDark;
 z-index: 1;
+// margin-left: 420%;
 }
 
   
@@ -126,7 +127,36 @@ font-size: 3rem;
 	margin-bottom: 20px;
 	}
 }
+
+.fade-text {
+display: none;
+}
+
+a {
+text-decoration: none;
+color: black;
+
+ 	&:hover {
+ 	animation: transform 2s; 
+ 	}
+}
   
+@keyframes transform {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
+
+@media @tablet {
+    a {
+    margin-top: 150px;
+    }
+}
+
 .container {
 width: 100%;
 margin-left: -600px;
