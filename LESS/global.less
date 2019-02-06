@@ -60,27 +60,43 @@ box-sizing: border-box;
 }
   
 img {
-	width: 200px;
-	margin: auto;
-	margin-top: -80px;
-	z-index: 1;
+width: 200px;
+display: none;
+margin: auto;
+margin-top: -80px;
+z-index: 1;
 	}
 
 @media (max-width: 800px){
 	img {
-	margin-top: 900px;
+	margin-top: 860px;
 	}
 }
 
-	
 .main-fa {
 margin-top: 10%;
 font-size: 50px;
 }
+
+.fa-campground {
+display: none;
+}
   
+.fa-hiking {
+display: none;
+}
+
+.fa-mountain {
+display: none;
+}
+
+.fa-binoculars {
+display: none;
+}
   
 h1 {
-font-family: 'Pathway Gothic One',       sans-serif;
+display: none;
+font-family: 'Pathway Gothic One', sans-serif;
 font-size: 28rem;
 color: @GreenDark;
 z-index: 1;
@@ -101,11 +117,18 @@ z-index: 1;
   
   
 p {
-font-family: 'Pathway Gothic One',       sans-serif;
+font-family: 'Pathway Gothic One', sans-serif;
 font-size: 3rem;
+}
+
+@media (max-width: 800px){
+	p {
+	margin-bottom: 20px;
+	}
 }
   
 .container {
 width: 100%;
+margin-left: -600px;
 }
   

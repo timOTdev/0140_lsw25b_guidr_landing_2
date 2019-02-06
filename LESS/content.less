@@ -18,14 +18,14 @@ flex-direction: column;
 .zero {
 height: 1100px;
 width: 100px;
-display: flex;
+display: none;
 background-image: url('../assets/login-bg.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 background-position: 10% 50%;
 }
   
-@media (max-width: 800px){
+@media @tablet{
     .zero {
     width: 100%;  
     height: 100px;
@@ -34,19 +34,11 @@ background-position: 10% 50%;
     }
 }
   
-@media (max-width: 500px){
-    .zero {
-    width: 100%;  
-    height: 100px;
-    background-position: 75% 10%;
-    }
-}
-  
 .one {
 width: 300px;
 }
   
-  @media (max-width: 800px){
+  @media @tablet{
     .one {
     width: 100%;  
     height: 200px;
@@ -61,7 +53,7 @@ width: 300px;
     }
 }
   
-@media (max-width: 500px){
+@media @mobile {
     .one {
     height: 100px;
     }
@@ -108,9 +100,9 @@ flex-direction: column;
 align-items: center;
 margin-bottom: 40px;
 }
-  
-  
+   
 .fa-compass {
+display: none;
 font-size: 10rem;
 cursor: pointer;
 }
@@ -121,12 +113,10 @@ cursor: pointer;
     }
 }
 
-
 .fa-compass:hover{
 font-size: 11rem;
 animation: transform 2s;
 }
-  
   
 @keyframes transform {
     0% {
@@ -137,20 +127,17 @@ animation: transform 2s;
     }
 }
   
-
-
 .two {
 height: 1100px;
 width: 30%;
-display: flex;
+display: none;
 background-image: url('../assets/login-bg.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 background-position: 30% 50%;
 }
   
-  
-@media (max-width: 800px){
+@media @tablet {
     .two {
     width: 100%;  
     height: 200px;
@@ -158,7 +145,6 @@ background-position: 30% 50%;
     background-position: 75% 28%;
     }
 }
-  
   
 .three { 
 height: 900px;
@@ -172,16 +158,15 @@ padding-left: 2.5px;
 display: none;
 }
   
-@media (max-width: 800px) {
-.three .sign-up {
+@media @tablet {
+    .three .sign-up {
     display: block;
     margin-top: 105px;
     }
 }
 
-@media (max-width: 500px) {
+@media @mobile {
     .three .sign-up {
-    display: block;
     margin-top: 95px;
     }
 }
@@ -189,14 +174,19 @@ display: none;
 .three .copy {
 display: none;
 }
+
+.green{
+    color: @GreenDark;
+    }
+    
   
-@media (max-width: 800px) {
+@media @tablet {
     .three .copy {
     display: block;
     }
 }
   
-@media (max-width: 800px) {
+@media @tablet {
     .three{
     height: 940px;
     display: block;
@@ -208,13 +198,14 @@ display: none;
 .four {
 height:1100px;
 width: 20%;
+display: none;
 background-image: url('../assets/login-bg.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 background-position: 75% 50%;
 }
   
-@media (max-width: 800px){
+@media @tablet {
 .four {
     width: 100%;  
     height: 200px;
