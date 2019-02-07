@@ -170,11 +170,11 @@ h1 {
 }
 @keyframes h1 {
   0% {
-    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+    text-shadow: 0 0 #1A4731, 0 0 #1A4731, 0 0 #1A4731, 0 0 #1A4731, 0 0 #1A4731, 0 0 #1A4731, 0 0 #1A4731, 0 0 #1A4731;
     transform: translateX(0) translateY(0);
   }
   100% {
-    text-shadow: -1px -1px #555555, -2px -2px #555555, -3px -3px #555555, -4px -4px #555555, -5px -5px #555555, -6px -6px #555555, -7px -7px #555555, -8px -8px #555555;
+    text-shadow: -1px -1px #1A4731, -2px -2px #1A4731, -3px -3px #1A4731, -4px -4px #1A4731, -5px -5px #1A4731, -6px -6px #1A4731, -7px -7px #1A4731, -8px -8px #1A4731;
     transform: translateX(8px) translateY(8px);
   }
 }
@@ -228,6 +228,33 @@ p {
 .container {
   width: 100%;
   margin-left: -600px;
+}
+.accent-bar {
+  width: 70px;
+  height: 1100px;
+  background: #1F9D55;
+  opacity: 0.2;
+}
+.bar-left {
+  margin-left: -120%;
+  margin-right: 2%;
+}
+@media (max-width: 800px) {
+  .bar-left {
+    display: none;
+  }
+}
+.bar-right {
+  margin-right: -120%;
+  margin-left: 2%;
+  display: none;
+}
+@media (max-width: 800px) {
+  .bar-right {
+    height: 1px;
+    width: 100%;
+    margin: 0;
+  }
 }
 section {
   display: flex;
@@ -303,9 +330,11 @@ section {
 .social {
   margin-right: 20px;
   z-index: 1;
+  display: none;
 }
 .social:hover {
   font-size: 5rem;
+  color: #1F9D55;
   cursor: pointer;
 }
 .sign-up {

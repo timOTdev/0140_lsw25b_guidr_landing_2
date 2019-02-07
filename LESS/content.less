@@ -4,7 +4,7 @@ display: flex;
 justify-content: center;
 }
   
-@media (max-width: 800px){
+@media @tablet {
     section {
     flex-direction: column;
     }
@@ -24,6 +24,7 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: 10% 50%;
 }
+
   
 @media @tablet{
     .zero {
@@ -87,13 +88,15 @@ font-size: 4rem;
 .social {
 margin-right: 20px;
 z-index: 1;
+display: none;
 }
   
 .social:hover {
 font-size: 5rem;
+color: @GreenDark;
 cursor: pointer;
 }
-  
+
 .sign-up {
 display: flex;
 flex-direction: column;
@@ -119,7 +122,6 @@ font-size: 11rem;
   
 .two {
 height: 1100px;
-// width: 50%;
 width: 30%;
 display: none;
 background-image: url('../assets/login-bg.jpg');
@@ -128,11 +130,6 @@ background-size: cover;
 background-position: 30% 50%;
 overflow: hidden;
 }
-
-// video {
-// height: 100%;
-// margin-left: -550px;
-// }
   
 @media @tablet {
     .two {
@@ -204,13 +201,6 @@ background-size: cover;
 background-position: 75% 50%;
 }
 
-// .four {
-//     height:1100px;
-//     width: 5%;
-//     display: none;
-//     background: @GreenDark;
-//     opacity: .6;
-//     }
   
 @media @tablet {
 .four {

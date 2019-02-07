@@ -48,12 +48,11 @@ table {
 	border-spacing: 0;
 }
 
-// Site specific global
+// ---
 
 html {
 font-size: 62.5%;
 }
-
 
 * {
 box-sizing: border-box;
@@ -67,7 +66,7 @@ margin-top: -80px;
 z-index: 1;
 	}
 
-@media (max-width: 800px){
+@media @tablet {
 	img {
 	margin-top: 860px;
 	}
@@ -101,7 +100,6 @@ font-size: 28rem;
 color: @GreenDark;
 animation: h1 0.6s both;
 z-index: 1;
-// margin-left: 90%;
 }
 
 @keyframes h1 {
@@ -116,13 +114,13 @@ z-index: 1;
   }
   
   
-@media (max-width: 800px){
+@media @tablet {
     h1 {
     font-size: 26.5rem;
     }
 }
   
-@media (max-width: 500px){
+@media @mobile {
     h1 {
     font-size: 15rem;
     }
@@ -134,7 +132,7 @@ font-family: 'Pathway Gothic One', sans-serif;
 font-size: 3rem;
 }
 
-@media (max-width: 800px){
+@media @tablet {
 	p {
 	margin-bottom: 20px;
 	}
@@ -180,3 +178,35 @@ width: 100%;
 margin-left: -600px;
 }
   
+.accent-bar {
+width: 70px;
+height: 1100px;
+// background: linear-gradient(#1F9D55, white);
+background: @GreenDark;
+opacity: 0.2;
+}
+
+.bar-left {
+margin-left: -120%;
+margin-right: 2%;
+}
+
+@media @tablet {
+	.bar-left {
+	display: none;
+	}
+}
+
+.bar-right {
+margin-right: -120%;
+margin-left: 2%;
+display: none;
+}
+
+@media @tablet {
+	.bar-right {
+	height: 1px;
+	width: 100%;
+	margin: 0;
+	}
+}
