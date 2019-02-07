@@ -1,4 +1,6 @@
 
+// --- Fade-ins 
+
 const zero=document.querySelector(".zero");
 const two=document.querySelector(".two");
 const four=document.querySelector(".four");
@@ -15,11 +17,19 @@ $(document).ready(() => {
   $("h1").fadeIn(3000);
   $(".site-icons").fadeIn(1100);
   $(".fa-compass").fadeIn(1500);
+  $(".bar-right").fadeIn(3500);
   $("img").fadeIn(4000);
+  $(".fa-facebook").fadeIn(1400);
+  $(".fa-twitter-square").fadeIn(2100);
+  $(".fa-instagram").fadeIn(2800);
 });
+
+// --- Slide
 
 const container = document.querySelector(".container");
 TweenMax.to(container, 2.5, { ease: Power3.easeOut, x: 600 });
+
+// --- Icons and Instruction class Highlights and Lowlights. 
 
 class IconSelect {
   constructor(x){
@@ -28,12 +38,12 @@ class IconSelect {
   this.item=document.querySelector(`p[data-select='${this.data}']`);
   this.item=new Instruction(this.item);
   this.x.addEventListener('mouseover', () => this.highLight());
-  this.x.addEventListener('mouseleave', () => this.lightsOff());
+  this.x.addEventListener('mouseleave', () => this.lowLight());
   }
   highLight(){
     this.item.display();
   }
-  lightsOff(){
+  lowLight(){
     this.item.hide();
   }
 }
