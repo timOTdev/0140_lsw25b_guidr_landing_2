@@ -1,10 +1,10 @@
 
-
 const zero=document.querySelector(".zero");
 const two=document.querySelector(".two");
 const four=document.querySelector(".four");
 
 $(document).ready(() => {
+  $(".fade-text").fadeIn(100);
   $(zero).fadeIn(3000);
   $(two).fadeIn(2500);
   $(four).fadeIn(2700);
@@ -20,8 +20,6 @@ $(document).ready(() => {
 
 const container = document.querySelector(".container");
 TweenMax.to(container, 2.5, { ease: Power3.easeOut, x: 600 });
-
-
 
 class IconSelect {
   constructor(x){

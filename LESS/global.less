@@ -99,9 +99,22 @@ display: none;
 font-family: 'Pathway Gothic One', sans-serif;
 font-size: 28rem;
 color: @GreenDark;
+animation: h1 0.6s both;
 z-index: 1;
+// margin-left: 90%;
 }
 
+@keyframes h1 {
+	0% {
+	  text-shadow: 0 0 @GreenDarker, 0 0 @GreenDarker, 0 0 @GreenDarker, 0 0 @GreenDarker, 0 0 @GreenDarker, 0 0 @GreenDarker, 0 0 @GreenDarker, 0 0 @GreenDarker;
+	  transform: translateX(0) translateY(0);
+	}
+	100% {
+	  text-shadow: -1px -1px @GreenDarker, -2px -2px @GreenDarker, -3px -3px @GreenDarker, -4px -4px @GreenDarker, -5px -5px @GreenDarker, -6px -6px @GreenDarker, -7px -7px @GreenDarker, -8px -8px @GreenDarker;
+	  transform: translateX(8px) translateY(8px);
+	}
+  }
+  
   
 @media (max-width: 800px){
     h1 {
@@ -126,7 +139,42 @@ font-size: 3rem;
 	margin-bottom: 20px;
 	}
 }
-  
+
+.fade-text {
+display: none;
+}
+
+.a-social {
+text-decoration: none;
+color: black;
+z-index: 1;
+}
+
+.a-compass {
+text-decoration: none;
+color: black;
+
+ 	&:hover {
+ 	animation: transform 2s; 
+ 	}
+}
+
+@keyframes transform {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
+
+@media @tablet {
+    .a-compass {
+    margin-top: 150px;
+    }
+}
+
 .container {
 width: 100%;
 margin-left: -600px;

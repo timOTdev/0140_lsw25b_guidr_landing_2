@@ -45,7 +45,7 @@ width: 300px;
     }
     
     .one p {
-    display: none;
+    margin-left: -5000px;
     }
 
     .one h1 {
@@ -57,7 +57,7 @@ width: 300px;
     .one {
     height: 100px;
     }
-    
+
     .one h1 {
     margin-top: -5px;
     margin-bottom: 5px;
@@ -75,7 +75,7 @@ margin-bottom: 40px;
 padding-left: 5px;
 padding-right: 5px;
 }
-  
+
 .site-icons {
 display: flex;
 justify-content: center;
@@ -115,27 +115,24 @@ cursor: pointer;
 
 .fa-compass:hover{
 font-size: 11rem;
-animation: transform 2s;
-}
-  
-@keyframes transform {
-    0% {
-    transform: rotate(0deg);
-    }
-    100% {
-    transform: rotate(360deg);
-    }
 }
   
 .two {
 height: 1100px;
+// width: 50%;
 width: 30%;
 display: none;
 background-image: url('../assets/login-bg.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 background-position: 30% 50%;
+overflow: hidden;
 }
+
+// video {
+// height: 100%;
+// margin-left: -550px;
+// }
   
 @media @tablet {
     .two {
@@ -151,6 +148,7 @@ height: 900px;
 width: 300px;
 align-items: center;
 justify-content: center;
+padding-top: 70px;
 padding-left: 2.5px;
 }
   
@@ -192,6 +190,7 @@ display: none;
     display: block;
     text-align: center;
     margin: 30px auto;
+    padding-top: 0;
     }
 }
 
@@ -204,6 +203,14 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: 75% 50%;
 }
+
+// .four {
+//     height:1100px;
+//     width: 5%;
+//     display: none;
+//     background: @GreenDark;
+//     opacity: .6;
+//     }
   
 @media @tablet {
 .four {
